@@ -85,23 +85,35 @@ a:hover{
 
     }
     /* Contact Button */
-.contact-btn {
-    display: inline-block;
-    background: #2f5fe3;
-    color: #fff;
-    text-decoration: none;
-    padding: 18px 40px;
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: 600;
-    transition: 0.3s ease;
-    font-family: Arial, sans-serif;
+.contact-btn{
+    display:inline-block;
+    padding:14px 32px;
+    background:linear-gradient(135deg,#4f46e5,#7c3aed);
+    color:#ffffff;
+    font-size:18px;
+    font-weight:600;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s ease;
+    box-shadow:0 4px 12px rgba(79,70,229,0.25);
 }
 
-.contact-btn:hover {
-    background: #214cc4;
+.contact-btn:hover{
+    background:linear-gradient(135deg,#4338ca,#6d28d9);
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(79,70,229,0.35);
 }
 
+.contact-btn:active{
+    transform:scale(0.98);
+}
+
+@media(max-width:768px){
+    .contact-btn{
+        padding:12px 24px;
+        font-size:16px;
+    }
+}
 /* Inner Box */
 .add-website-box {
     background: #fff;
